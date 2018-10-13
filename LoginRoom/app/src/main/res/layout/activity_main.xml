@@ -25,17 +25,19 @@
 
     <Button
         android:id="@+id/signupButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/passwordEditText"
-        android:layout_toLeftOf="@id/passwordEditText"/>
+        android:text="Sign Up"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/passwordEditText"/>
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/passwordEditText"
-        android:layout_toRightOf="@id/signupButton"
+        android:text="Login"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/signupButton"
         android:enabled="false"/>
 
 </RelativeLayout>
