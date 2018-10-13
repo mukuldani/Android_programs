@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/nameTextView"/>
+
+    <TextView
+        android:id="@+id/salaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/genderTextView"/>
+
+    <TextView
+        android:id="@+id/taxTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/salaryTextView"/>
+
+    <TextView
+        android:id="@+id/langugesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:text="Languages Known : "
+        android:layout_below="@id/taxTextView"/>
+
+    <TextView
+        android:id="@+id/angularTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:layout_below="@id/langugesTextView"/>
+
+    <TextView
+        android:id="@+id/bootstrapTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:layout_below="@id/angularTextView"/>
+
+    <TextView
+        android:id="@+id/nodejsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:layout_below="@id/bootstrapTextView"/>
+
+    <TextView
+        android:id="@+id/androidTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:layout_below="@id/nodejsTextView"/>
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/androidTextView"/>
+
+</RelativeLayout>

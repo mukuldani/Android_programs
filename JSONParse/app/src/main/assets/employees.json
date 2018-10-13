@@ -1,0 +1,34 @@
+{
+  "employees": [
+    {
+      "name": "abc",
+      "age": 20,
+      "location": "Mumbai",
+      "companies": [
+        {
+          "name": "Accenture",
+          "location": "Mumbai"
+        },
+        {
+          "name": "Capgemini",
+          "location": "Pune"
+        }
+      ]
+    },
+    {
+      "name": "pqr",
+      "age": 34,
+      "location": "Pune",
+      "companies": [
+        {
+          "name": "Mindtree",
+          "location": "Mumbai"
+        },
+        {
+          "name": "Thoughtworks",
+          "location": "Pune"
+        }
+      ]
+    }
+  ]
+}

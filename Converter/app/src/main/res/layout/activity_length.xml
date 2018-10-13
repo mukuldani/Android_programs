@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/metersEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter length in meters"/>
+
+    <Button
+        android:id="@+id/kilometersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to KM"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultkmTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/centimetersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to CM"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultcmTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/inchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Inches"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultinchesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+
+</LinearLayout>

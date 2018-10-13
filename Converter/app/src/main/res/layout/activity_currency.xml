@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/indianEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter in Indian RS"/>
+
+    <Button
+        android:id="@+id/usdButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to USD"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultusdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/poundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Pound"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultpoundTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/yenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Yen"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultyenTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+</LinearLayout>

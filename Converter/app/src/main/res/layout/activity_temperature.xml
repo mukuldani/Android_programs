@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/celciusEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter temperature in Celcius"/>
+
+    <Button
+        android:id="@+id/fahrenheitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Fahrenheit"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultfahrenheitTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/kelvinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert to Kelvin"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultkelvinTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+</LinearLayout>
