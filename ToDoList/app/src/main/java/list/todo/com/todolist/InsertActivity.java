@@ -20,8 +20,8 @@ public class InsertActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert);
-        toDoListDatabase = Room.databaseBuilder(this, ToDoListDatabase.class,"ToDoList_db")
-                            .allowMainThreadQueries().build();
+        toDoListDatabase = Room.databaseBuilder(this, ToDoListDatabase.class, "ToDoList_db")
+                .allowMainThreadQueries().build();
 
         titleEditText = findViewById(R.id.titleEditText);
         taskEditText = findViewById(R.id.taskEditText);
@@ -34,7 +34,7 @@ public class InsertActivity extends AppCompatActivity {
                 toDoList.setTitle(titleEditText.getText().toString());
                 toDoList.setTask(taskEditText.getText().toString());
                 toDoListDatabase.toDoListDao().insertToDoList(toDoList);
-                Toast.makeText(InsertActivity.this,"Record Inserted",Toast.LENGTH_LONG).show();
+                Toast.makeText(InsertActivity.this, "Record Inserted", Toast.LENGTH_LONG).show();
             }
         });
     }

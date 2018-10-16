@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class ContactAdapter extends RecyclerView.Adapter<ViewHolder> {
+public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHolder> {
 
     private List<Contact> contacts;
 

@@ -30,29 +30,36 @@ public class ModifyListActivity extends AppCompatActivity {
         updateTaskButton = findViewById(R.id.updateTaskButton);
         deleteTaskButton = findViewById(R.id.deleteTaskButton);
 
-        toDoListDatabase = Room.databaseBuilder(this, ToDoListDatabase.class,"ToDoList_db")
+        toDoListDatabase = Room.databaseBuilder(this, ToDoListDatabase.class, "ToDoList_db")
                 .allowMainThreadQueries().build();
 
 
         updateTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ToDoList toDoList = new ToDoList();
-                toDoList.setTitle(titleEditText.getText().toString());
-                toDoList.setTask(taskEditText.getText().toString());
-                toDoListDatabase.toDoListDao().updateToDoList(toDoList);
-                Toast.makeText(ModifyListActivity.this,"Record Modified", Toast.LENGTH_LONG).show();
+                ToDoList toDoList = toDoListDatabase.toDoListDao().getToDoListByTitle(titleEditText.getText().toString());
+
+                if (toDoList != null) {
+                    toDoList.setTask(taskEditText.getText().toString());
+                    toDoListDatabase.toDoListDao().updateToDoList(toDoList);
+                    Toast.makeText(ModifyListActivity.this, "Record Modified", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(ModifyListActivity.this, "Record not found!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         deleteTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ToDoList toDoList = new ToDoList();
-                toDoList.setTitle(titleEditText.getText().toString());
-                toDoList.setTask(taskEditText.getText().toString());
-                toDoListDatabase.toDoListDao().deleteToDoList(toDoList);
-                Toast.makeText(ModifyListActivity.this,"Record Deleted", Toast.LENGTH_LONG).show();
+                ToDoList toDoList = toDoListDatabase.toDoListDao().getToDoListByTitle(titleEditText.getText().toString());
+
+                if (toDoList != null) {
+                    toDoListDatabase.toDoListDao().deleteToDoList(toDoList);
+                    Toast.makeText(ModifyListActivity.this, "Record Deleted", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(ModifyListActivity.this, "Record not found!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 

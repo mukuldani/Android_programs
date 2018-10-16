@@ -17,7 +17,7 @@
         android:id="@+id/viewContactButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create Contact"
+        android:text="View Contact"
         android:layout_below="@id/createContactButton"/>
 
     <Button

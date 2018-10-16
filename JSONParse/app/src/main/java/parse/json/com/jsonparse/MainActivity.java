@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         employeeCompanies1TextView = findViewById(R.id.employeeCompanies1TextView);
         employeeLocation1TextView = findViewById(R.id.employeeLocation1TextView);
         employeeAge1TextView = findViewById(R.id.employeeAge1TextView);
-        employeeName2TextView = findViewById(R.id.employeeName1TextView);
+        employeeName2TextView = findViewById(R.id.employeeName2TextView);
         employeeCompanies2TextView = findViewById(R.id.employeeCompanies2TextView);
         employeeLocation2TextView = findViewById(R.id.employeeLocation2TextView);
         employeeAge2TextView = findViewById(R.id.employeeAge2TextView);
@@ -84,18 +84,18 @@ public class MainActivity extends AppCompatActivity {
 
             //For Second employee
             JSONObject emp2Details = employees.getJSONObject(1);
-            String emp2Name  = emp1Details.getString("name");
+            String emp2Name  = emp2Details.getString("name");
             employeeName2TextView.setText("Emp Name  : " +emp2Name);
-            String emp2Age  = emp1Details.getString("age");
+            String emp2Age  = emp2Details.getString("age");
             employeeAge2TextView.setText("Emp Age  : " +emp2Age);
-            String emp2Location = emp1Details.getString("location");
+            String emp2Location = emp2Details.getString("location");
             employeeLocation2TextView.setText("Emp Location  : " +emp2Location);
-            JSONArray emp2CompanyArray = emp1Details.getJSONArray("companies");
+            JSONArray emp2CompanyArray = emp2Details.getJSONArray("companies");
             //For emp2 company details
-            JSONObject emp2CompanyDetals1 = emp1CompanyArray.getJSONObject(0);
-            String emp2CompanyName1 = emp1CompanyDetals1.getString("name");
-            JSONObject emp2CompanyDetals2 = emp1CompanyArray.getJSONObject(1);
-            String emp2CompanyName2 = emp1CompanyDetals2.getString("name");
+            JSONObject emp2CompanyDetals1 = emp2CompanyArray.getJSONObject(0);
+            String emp2CompanyName1 = emp2CompanyDetals1.getString("name");
+            JSONObject emp2CompanyDetals2 = emp2CompanyArray.getJSONObject(1);
+            String emp2CompanyName2 = emp2CompanyDetals2.getString("name");
             employeeCompanies2TextView.setText("Emp Companies  : " +emp2CompanyName1+ " , " +emp2CompanyName2);
         }
 

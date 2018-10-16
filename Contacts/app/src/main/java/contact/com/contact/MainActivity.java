@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         viewContactButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, CreateContactActivity.class);
+                Intent intent = new Intent(MainActivity.this, ViewContactActivity.class);
                 startActivity(intent);
             }
         });
